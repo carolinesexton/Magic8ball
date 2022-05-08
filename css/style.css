@@ -1,0 +1,64 @@
+body {
+    background: radial-gradient(circle, white 15%, black 75%);
+    font-family: 'Tapestry', cursive;
+    color:rgb(241, 247, 250);
+    text-align: center;
+}
+header {
+    font-size: 80px;
+    text-shadow: .5px 1px 3px rgb(248, 252, 10);
+    padding-top: 2rem;
+}
+h1 { 
+    color: rgb(243, 244, 250);
+    padding: 1rem;
+    text-shadow: .5px 1px 0px rgb(59, 72, 243);
+}
+
+#input-box {
+    width: fit-content;
+    block-size: fit-content;
+    text-align: center;
+    margin: auto;
+    background-position: inherit;
+}
+#questionArea {
+    border-radius: 5%;
+    box-shadow: 3px 2px 3px;
+    padding: 10px;
+
+}
+
+#answerBtn {
+    background: rgb(59, 72, 243);
+    display: flex;
+    padding: 10px;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 9rem;
+    border-radius: 5%;
+    border-color: rgb(240, 236, 245);
+    font-family: 'Tapestry';
+    color:white;
+}
+
+#magic8ball {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: auto;
+    width: 450px;
+    height: 450px;
+    padding: 20px; 
+    animation-name: rotate;
+    transition: transform 1s ease-in-out;
+    animation-duration: 1.5s;
+}
+#answer {
+    position: absolute;
+    margin-top: 200px;
+    color: white;
+    font-size: 25px;
+}
