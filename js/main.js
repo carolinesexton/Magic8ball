@@ -18,13 +18,13 @@ window.onload = function() {
     const answerBtn = document.getElementById("answerBtn");
     let answer = document.getElementById("answer");
     let questionArea = document.getElementById("questionArea");
-
+//button with answer
     answerBtn.addEventListener("click", function() {
         if (questionArea.value.length < 4) {
-            alert("Enter a question.");
+            alert("Please enter your question in the box below.");
         } else {
             answer.innerText = "";
-            var num = Math.floor(Math.random() * Math.floor(answers.length));
+            let num = Math.floor(Math.random() * Math.floor(answers.length));
             answer.innerText = answers[num];
         }
     });
