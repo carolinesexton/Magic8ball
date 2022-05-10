@@ -13,20 +13,22 @@
 <link rel="stylesheet" href="./css/style.css">
 <script defer src="./js/main.js"></script>
 
+
 </head>
 <body>
     <header>Magic 8 Ball</header>
    
     
 <div id="input-box">
-    <h1>STEP 1:<br>Type your yes or no question below.</h1>
+    <h1>Type yes or no question below.</h1>
 
-    <textarea id = "questionArea" value = "input" cols="40" rows="10"></textarea>
+    <textarea id="questions"  name="questions" cols="40" rows="10"></textarea>
+    <button id = "clearBtn" type="button">Clear</button>
     <br>
-    <h2>STEP 2: Press the Answer button.</h2>
-    <button id = "answerBtn" type="button">The Answer Is...</button>
+
+    <button id = "answerBtn" type="button">Press me for the Answer...</button>
 </div>
-    <h2>STEP 3:  Hover over the Magic 8 Ball to see your answer.</h2>
+    <h2>Hover over the Magic 8 Ball to see your answer.</h2>
 <div id = "magic8ball">
     <img src="images/magic8.png" alt="a queball with black and white geometric patterns">
         <p id = "answer" >My reply is no.</p>
