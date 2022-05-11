@@ -1,26 +1,34 @@
 const textarea = document.getElementById("questions");
 //clear textarea value
 textarea.value = "";
-//clear textarea value on click
 
+/*clear textarea value on click, Vinson helped me with text fade out begins line 38
 const clearBtn = document.getElementById("clearBtn");
-
 clearBtn.addEventListener("click", function handleClick() {
-   textarea.value = "";
-});
+textarea.value = "";
+});*/
+
 //define magic 8 ball answers
 
-let answers = [  
-    "Yepperdoodles!", 
-    "No",
-    "Of course!",
-    "It is decidely so.",
-    "Reply hazy, try again.",
-    "No, not yet.",
-    "Humm, not clear.",
-    "Yes, definitely!",
-    "Ask your Mom.",
-    "You betcha!"
+let answers = [ 
+    "No dumb questions but Zombies eat brains and your safe.",
+    "It takes an extrodianary intelligence to contemplate the obvious.",
+    "Nah Brah",
+    "Do or do not. There is no try.(Yoda)",
+    "Negatory",
+    "Damn skippy!", 
+    "Never assume the obvious is true", 
+    "Everything you can imagine is real.",
+    "Nuh-Uh!",
+    "Just do it!",
+    "Hells to the No!",
+    "Totes!",
+    "Hahahahahahahahahahahaha...hahahaha...NO!",
+    "Ummm, what was the question?",
+    "The time is always right.",
+    "Fo shizzle", 
+    "Affirmative", 
+    "Aiyeee matey"
 ];
 
     const answerBtn = document.getElementById("answerBtn");
@@ -35,7 +43,12 @@ let answers = [
             answer.innerText = "";
             let num = Math.floor(Math.random() * Math.floor(answers.length));
             answer.innerText = answers[num];
-        
+        questions.classList.add("fade-out");
+        setTimeout(() => {
+            questions.classList.remove("fade-out");
+            questions.value = "";
+
+        } , 3000); 
         }
 
     });

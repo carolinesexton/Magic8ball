@@ -6,7 +6,7 @@ body {
 }
 header {
     font-size: 100px;
-    text-shadow: .5px 1px 3px rgb(248, 252, 10);
+    text-shadow: .5px 1px 3px 2px rgb(28, 28, 27);
     padding-top: 2rem;
     font-family: 'Rubik Puddles';
 }
@@ -20,6 +20,7 @@ h2 {
     color: rgb(31, 29, 29);
     display: flex;
     margin: 20px;
+    text-shadow: .1px 2px 2px 1px black;
 }
 
 #input-box {
@@ -30,11 +31,11 @@ h2 {
     background-position: inherit;
 }
 
-#clearBtn {
+/* #clearBtn {
     background: gold;
     font-family: Macondo;
     border-radius: 100%;
-}
+} */
 
 #questions {
     border-radius: 5%;
@@ -42,6 +43,11 @@ h2 {
     padding: 15px;
     font-size: large;
     font-family: 'Macondo';
+    transition: all 3s;
+}
+
+.fade-out {
+    animation: fade-text 3s;
 }
 
 #answerBtn {
@@ -51,7 +57,7 @@ h2 {
     font-size: 30px; 
     margin-top: 30px;
     margin-bottom: 20px;
-    margin-left: 3rem;
+    margin-left: 7rem;
     border-radius: 10%;
     border-color: rgb(228, 247, 19);
     font-family: Macondo;
@@ -70,19 +76,22 @@ h2 {
 
 #answer {
     position: absolute;
-    margin-top: 200px;
+    margin-top: 270px;
     color: white;
     font-size: 25px;
 }
 
-#magic8ball:hover {
+#magic8ball {
     display: flex;
     position: relative;
     justify-content: center;
     margin: auto;
-    width: 400px;
-    height: 400px;
-    padding: 20px; 
+    padding: 20px;
+    width: 600px;
+    height: 600px;
+}
+
+#magic8ball:hover {
     animation: shake .5s cubic-bezier(0.075, 0.82, 0.165, 1);
     animation-iteration-count: infinite;
 }
@@ -111,4 +120,11 @@ h2 {
     }
 }
 
-
+@keyframes fade-text {
+    0% {
+        color: black; 
+    }
+    100% {
+        color: transparent;
+    }
+}
