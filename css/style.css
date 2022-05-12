@@ -1,18 +1,26 @@
 body {
     background: radial-gradient(circle, white 15%, black 75%);
-    font-family: 'Tapestry', cursive;
+    font-family: 'Macondo';
     color:rgb(241, 247, 250);
     text-align: center;
 }
 header {
-    font-size: 80px;
-    text-shadow: .5px 1px 3px rgb(248, 252, 10);
+    font-size: 100px;
+    text-shadow: .5px 1px 3px 2px rgb(28, 28, 27);
     padding-top: 2rem;
+    font-family: 'Rubik Puddles';
 }
 h1 { 
     color: rgb(243, 244, 250);
     padding: 1rem;
-    text-shadow: .5px 1px 0px rgb(59, 72, 243);
+    text-shadow: .5px 1px 0px rgb(20, 32, 188);
+}
+
+h2 {
+    color: rgb(31, 29, 29);
+    display: flex;
+    margin: 20px;
+    text-shadow: .1px 2px 2px 1px black;
 }
 
 #input-box {
@@ -22,26 +30,55 @@ h1 {
     margin: auto;
     background-position: inherit;
 }
-#questionArea {
+
+/* #clearBtn {
+    background: gold;
+    font-family: Macondo;
+    border-radius: 100%;
+} */
+
+#questions {
     border-radius: 5%;
     box-shadow: 3px 2px 3px;
-    padding: 10px;
+    padding: 15px;
+    font-size: large;
+    font-family: 'Macondo';
+    transition: all 3s;
+}
 
+.fade-out {
+    animation: fade-text 3s;
 }
 
 #answerBtn {
     background: rgb(59, 72, 243);
     display: flex;
     padding: 10px;
-    font-size: 30px;
-    box-shadow: 1px 1px 2px;
+    font-size: 30px; 
     margin-top: 30px;
     margin-bottom: 20px;
-    margin-left: 9rem;
-    border-radius: 5%;
-    border-color: rgb(240, 236, 245);
-    font-family: 'Tapestry';
+    margin-left: 7rem;
+    border-radius: 10%;
+    border-color: rgb(228, 247, 19);
+    font-family: Macondo;
     color:white;
+}
+
+h2 {
+    color: rgb(31, 29, 29);
+    display: flex;
+    margin-top: 30px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+
+}
+
+#answer {
+    position: absolute;
+    margin-top: 270px;
+    color: white;
+    font-size: 25px;
 }
 
 #magic8ball {
@@ -49,16 +86,45 @@ h1 {
     position: relative;
     justify-content: center;
     margin: auto;
-    width: 450px;
-    height: 450px;
-    padding: 20px; 
-    animation-name: rotate;
-    transition: transform 1s ease-in-out;
-    animation-duration: 1.5s;
+    padding: 20px;
+    width: 600px;
+    height: 600px;
 }
-#answer {
-    position: absolute;
-    margin-top: 200px;
-    color: white;
-    font-size: 25px;
+
+#magic8ball:hover {
+    animation: shake .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { 
+        transform: translate(1px, 1px) rotate(0); 
+    }
+    15% { 
+        transform: translate(-1px, -0px) rotate(1deg); 
+    }
+    30% { 
+        transform: translate(1px, 0px) rotate(-3deg); 
+    }
+    45% { 
+        transform: translate(0px, -1px) rotate(5deg); 
+    }
+    60% {
+         transform: translate(1px, 1px) rotate(-1deg); 
+    }
+    75% { 
+        transform: translate(-1px, -1px) rotate(3deg); 
+    }
+    90% { 
+        transform: translate(0px, 1px) rotate(5deg); 
+    }
+}
+
+@keyframes fade-text {
+    0% {
+        color: black; 
+    }
+    100% {
+        color: transparent;
+    }
 }

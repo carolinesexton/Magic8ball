@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Magic 8 Ball</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@100;400;600&family=Tapestry&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Macondo&family=Open+Sans:wght@300&family=Poppins:wght@100;400;600&family=Tapestry&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Macondo&family=Open+Sans:wght@300&family=Poppins:wght@100;400;600&family=Rubik+Puddles&family=Tapestry&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./css/style.css">
 <script defer src="./js/main.js"></script>
+
 
 </head>
 <body>
@@ -17,14 +21,20 @@
    
     
 <div id="input-box">
-    <h1>Type your question below.</h1>
-    <textarea id = "questionArea" cols="40" rows="10"></textarea>
+    <h1>You now have the key to open<br>
+         all the locks of your confused mind.<br>Pleeze ask your yes or no question below.</h1>
+
+    <textarea id="questions"  name="questions" cols="40" rows="10"></textarea>
+    <!-- <button id = "clearBtn" type="button">Clear</button> -->
     <br>
-    <button id = "answerBtn" type="button">Shake!</button>
+
+    <button id = "answerBtn" type="button">Press me for the Answer...</button>
 </div>
+    <h2><strong>Hover cursor over 8 ball for a little shake.</strong></h2>
 <div id = "magic8ball">
     <img src="images/magic8.png" alt="a queball with black and white geometric patterns">
-        <p id = "answer" >My reply is no.</p>
+        <p id = "answer" >"There are no dumb questions<br>but Zombies eat brains and your safe."</p>
+        
     </img>
 </div>
     
