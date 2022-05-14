@@ -12,7 +12,6 @@ textarea.value = "";
 
 let answers = [ 
     "No dumb questions but Zombies eat brains and your safe.",
-    "It takes an extrodianary intelligence to contemplate the obvious.",
     "Nah Brah",
     "Do or do not. There is no try.(Yoda)",
     "Negatory",
